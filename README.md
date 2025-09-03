@@ -37,7 +37,7 @@ It detects and tracks players, the ball, and key field elements, creating tactic
 
 ✅ **Streamlit App**
 
-* Deployable as a web app for easy access and sharing.
+* Deployable as a [web app](https://football-analysis-a.streamlit.app/) for easy access and sharing.
 
 ---
 
@@ -101,7 +101,7 @@ poetry install
 Launch the Streamlit web app:
 
 ```bash
-streamlit run main.py
+poetry run streamlit run main.py
 ```
 
 Access it at `http://localhost:8501`.

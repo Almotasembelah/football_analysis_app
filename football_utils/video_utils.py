@@ -21,7 +21,7 @@ def load_video(vid_path, output_path, bs=8):
                     break
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 if writer is None:
-                    writer = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*"avc1"), fps, (frame.shape[1], frame.shape[0]))
+                    writer = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*"H264"), fps, (frame.shape[1], frame.shape[0]))
                 frames.append(frame)
             if not ret:
                 break
