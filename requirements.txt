@@ -11,4 +11,4 @@ torch
 torchvision==0.23.0
 streamlit==1.49.1
 scikit-learn==1.7.1
-opencv-python-headless
+opencv-python
