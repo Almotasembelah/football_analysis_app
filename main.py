@@ -40,7 +40,7 @@ class Config:
     BALL_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/ball_model/best.pt", 'models/ball_model_best.pt')
     KPT_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/keypoints/best.pt", 'models/keypoints_best.pt')
     OUTPUT_VIDEO_PATH = "out/exp.mp4"
-    
+    os.makedirs('out', exist_ok=True)
     # SAHI parameters
     SLICE_HEIGHT = 640
     SLICE_WIDTH = 640
