@@ -1,5 +1,8 @@
 import cv2
 import numpy as np
+import sys
+print(sys.path)
+
 
 def get_lines(image):
     image_hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)

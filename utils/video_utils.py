@@ -1,6 +1,7 @@
 import streamlit as st
 import cv2
-import numpy as np
+import sys
+print(sys.path)
 
 ###### Video Processing Utilities ######
 def load_video(vid_path, output_path, bs=8):

@@ -1,6 +1,9 @@
 import numpy as np
 import cv2
 import torch
+import sys
+print(sys.path)
+
 
 class Transform:
     def __init__(self):

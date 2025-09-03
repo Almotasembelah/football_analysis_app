@@ -3,6 +3,8 @@ import torch
 import numpy as np
 import torch
 from collections import defaultdict
+import sys
+print(sys.path)
 
 class ImprovedPlayers:
     """

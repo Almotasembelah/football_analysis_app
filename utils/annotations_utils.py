@@ -1,7 +1,11 @@
+import sys
+print(sys.path)
+
 import cv2
 import numpy as np
 from .players_utils import get_last_players
 from .line_detection_utils import get_lines, get_intersection
+
 
 CENTER_LINE = None
 CORNER_LINE_DOWN = None
