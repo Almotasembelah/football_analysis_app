@@ -20,7 +20,7 @@ from assigners import Player2TeamAssigner
 from matplotlib.colors import Normalize
 import matplotlib
 from huggingface_hub import hf_hub_download
-
+import shutil
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ def get_file_from_hf(repo, filename, local_path):
         print(f"Downloading {filename} from Hugging Face...")
         os.makedirs(os.path.dirname(local_path), exist_ok=True)
         downloaded_path = hf_hub_download(repo_id=repo, filename=filename)
-        os.rename(downloaded_path, local_path)
+        shutil.copy(downloaded_path, local_path)
     return local_path
 
 # Configuration constants
