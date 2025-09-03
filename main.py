@@ -204,7 +204,7 @@ def get_video_source() -> Optional[str]:
                 cap.release()
     
     elif video_source == "Use sample video":
-        sample_path = get_file_from_hf("Almotasembelah/football-analysis-assets", "inputs/input.mp4", 'test.mp4')
+        sample_path = get_file_from_hf("Almotasembelah/football-analysis-assets", "inputs/input.mp4", 'input/test.mp4')
         if Path(sample_path).exists():
             video_path = sample_path
         else:
