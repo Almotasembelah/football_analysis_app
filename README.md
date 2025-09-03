@@ -53,14 +53,14 @@ It detects and tracks players, the ball, and key field elements, creating tactic
 
 ```
 FOOTBALL_ANALYSIS/
-├── assigners/                  # Assignments logic (ball-to-player, player-to-team)
+├── assigners/                  # Assignments logic (player-to-team)
 │   └── player2teams.py
 │
 ├── data/                       # Datasets and related files
 ├── input/                      # Input videos/images
-├── models/                     # YOLOv11 model weights and configs
+├── models/                     # YOLOv11 model weights
 ├── out/                        # Output results (videos, images, etc.)
-├── train/                      # Training scripts and configs
+├── train/                      # Training
 │
 ├── utils/                      # Utility scripts
 │   ├── annotations_utils.py
