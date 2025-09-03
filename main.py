@@ -11,6 +11,10 @@ import cv2
 import numpy as np
 import logging
 
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from utils import draw_annotation, draw_ball_annotation, draw_farthest_players, draw_keypoints, ImprovedPlayers, Transform, load_video, show_video
 from assigners import Player2TeamAssigner
 from matplotlib.colors import Normalize
