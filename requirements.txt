@@ -1,0 +1,14 @@
+numpy==1.24.3
+pandas==2.2.3
+matplotlib==3.9.2
+ultralytics==8.3.31
+roboflow==1.1.49
+uvicorn==0.32.0
+sahi==0.11.32
+supervision==0.26.1
+huggingface-hub==0.34.4
+torch
+torchvision==0.23.0
+streamlit==1.49.1
+scikit-learn==1.7.1
+opencv-python-headless
