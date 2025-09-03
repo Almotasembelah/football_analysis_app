@@ -36,9 +36,9 @@ def get_file_from_hf(repo, filename, local_path):
 
 # Configuration constants
 class Config:
-    MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "/models/players/best.pt", 'models/players/best.pt')
-    BALL_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "/models/ball_model/best.pt", 'models/ball_model/best.pt')
-    KPT_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "/models/keypointsbest.pt", 'models/keypoints/best.pt')
+    MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/players/best.pt", 'models/players/best.pt')
+    BALL_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/ball_model/best.pt", 'models/ball_model/best.pt')
+    KPT_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/keypointsbest.pt", 'models/keypoints/best.pt')
     OUTPUT_VIDEO_PATH = "out/exp.mp4"
     
     # SAHI parameters
