@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "offsidex"
+version = "0.1.0"
+description = ""
+authors = ["Almotasembelah Sharaf"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+numpy = "^1.24.3"
+pandas = "^2.2.3"
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.2"
+ultralytics = "^8.3.31"
+roboflow = "^1.1.49"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.0"
+python-multipart = "^0.0.17"
+label-studio-ml = "^1.0.9"
+rq = "^2.0.0"
+sahi = "^0.11.32"
+supervision = "^0.26.1"
+huggingface-hub = "^0.34.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
