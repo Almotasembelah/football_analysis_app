@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Almotasembelah Sharaf"]
 readme = "README.md"
+package-mode = false
 
 
 [tool.poetry.dependencies]
