@@ -36,9 +36,9 @@ def get_file_from_hf(repo, filename, local_path):
 
 # Configuration constants
 class Config:
-    MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/players/best.pt", 'models/players/best.pt')
-    BALL_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/ball_model/best.pt", 'models/ball_model/best.pt')
-    KPT_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/keypointsbest.pt", 'models/keypoints/best.pt')
+    MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/players/best.pt", 'players_best.pt')
+    BALL_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/ball_model/best.pt", 'ball_model_best.pt')
+    KPT_MODEL_PATH = get_file_from_hf("Almotasembelah/football-analysis-assets", "models/keypointsbest.pt", 'keypoints_best.pt')
     OUTPUT_VIDEO_PATH = "out/exp.mp4"
     
     # SAHI parameters
@@ -204,7 +204,7 @@ def get_video_source() -> Optional[str]:
                 cap.release()
     
     elif video_source == "Use sample video":
-        sample_path = get_file_from_hf("Almotasembelah/football-analysis-assets", "inputs/input.mp4", 'inputs/test.mp4')
+        sample_path = get_file_from_hf("Almotasembelah/football-analysis-assets", "inputs/input.mp4", 'test.mp4')
         if Path(sample_path).exists():
             video_path = sample_path
         else:
